@@ -17,6 +17,7 @@ public class TestController {
         return "ok";
     }
 
+    // 方法描述
     @ApiOperation(value = "方法描述", notes = "提示内容")
     @GetMapping(value = "/testGet")
     public String testGet(@PathVariable @ApiParam(name = "参数名", value = "参数说明", required = true) Integer i) {
